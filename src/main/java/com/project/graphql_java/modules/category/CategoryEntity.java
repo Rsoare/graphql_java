@@ -13,13 +13,13 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class CategoryEntity {
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
-    private String name;
 
-    public CategoryEntity(String name){
-        this.name = name;
-    }
+   @Id
+   @GeneratedValue(strategy = GenerationType.UUID)
+   private UUID id;
+   private String name;
+
+   public CategoryEntity(String name) {
+      this.name = name;
+   }
 }
